@@ -1,0 +1,31 @@
+Curso inicial de node
+
+Inicio {
+    > Iniciando uma aplicação no Node
+        $ npm init
+        > Se não quizer responder perguntas da instação é so colocar -y no final
+            $ npm init -y
+        > Criar arquivo "server.js"
+
+    > PS: Node só interpreta JavaScript
+    
+    > O código 'use  strict' entre aspas simples, força o JS a ser bem mais criterioso com seu código
+
+    > Comando para node executar o arquivo criado
+        $ node {NOME_DO_ARQUIVO.js}
+        exemplo atual: $ node server.js
+
+    > Para criar um servidor http precisa instalar 2 pacotes mais 1 para debugar
+        $ npm install http express debug --save
+    
+    > Importar modulos para o Node
+        $ const {NOME_DA_VARIAVEL_ARMAZENA_MODULO} = require('{O_MODULO}');
+            exemp... $ const http = require('http');
+
+            PS: Require serve para importar o modulos
+            PS2: Tudo que for colocado no require entre aspas simples SEM UM CAMINHO sera procurado na pasta NODE_MODULES
+            PS3: Para exportar coisas da sua aplicação coloque o caminho do arquivo, por exemplo... './meu_arquivo'
+
+    > Nao fixar porta da aplicação. O correto é fazer uma função para redefinir a porta
+
+}
